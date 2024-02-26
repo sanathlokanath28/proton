@@ -1,0 +1,16 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: ECS Service Template
+
+Resources:
+  MyECSService:
+    Type: AWS::Proton::Service
+    Properties:
+      ServiceName: MyECSService
+      DisplayName: My ECS Service
+      Description: Service for running containers on ECS
+      RepositoryConnectionArn: arn:aws:codestar-connections:ap-southeast-1:274073291313:connection/9e7985a6-fd88-4b14-8972-61c127fcbe1a
+      Provisioning: FARGATE
+      PipelineConfig:
+        SourceConfigs:
+          - RepositoryName: proton
+            BranchName: develop

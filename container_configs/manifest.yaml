@@ -1,0 +1,7 @@
+Containers:
+  - Name: myContainer
+    Image: nginx:latest
+    PortMappings:
+      - ContainerPort: 80
+    Memory: 512
+    Cpu: 256

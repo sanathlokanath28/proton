@@ -1,0 +1,15 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Development Environment Template
+
+Resources:
+  DevEnvironment:
+    Type: AWS::Proton::Environment
+    Properties:
+      Name: DevEnvironment
+      DisplayName: Development Environment
+      Description: Environment for development purposes
+      Provisioning: FARGATE
+      ServiceTemplates:
+        - TemplateName: MyECSService
+          MajorVersion: '1'
+          MinorVersion: '0'
