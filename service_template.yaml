@@ -13,4 +13,4 @@ Resources:
       PipelineConfig:
         SourceConfigs:
           - RepositoryName: proton
-            BranchName: develop
+            BranchName: main
