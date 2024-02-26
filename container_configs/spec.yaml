@@ -1,0 +1,18 @@
+Resources:
+  - Type: AWS::ECS::Cluster
+
+  - Type: AWS::ECS::TaskDefinition
+    Properties:
+      ContainerDefinitions:
+        - Name: myContainer
+          Image: nginx:latest
+          PortMappings:
+            - ContainerPort: 80
+          Memory: 512
+          Cpu: 256
+
+  - Type: AWS::ECS::Service
+    Properties:
+      Cluster: !GetAtt ECSCluster.Arn
+      DesiredCount: 1
+      TaskDefinition: !Ref TaskDefinition
