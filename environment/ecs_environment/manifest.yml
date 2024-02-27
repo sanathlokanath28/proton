@@ -1,0 +1,4 @@
+name: ecs-environment
+display_name: ECS Environment
+description: An environment for ECS services
+schema_version: '1'

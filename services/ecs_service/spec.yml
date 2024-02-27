@@ -1,0 +1,7 @@
+name: ecs-service
+display_name: ECS Service
+description: An ECS service
+repository: 
+  branch: main
+  repository_url: https://github.com/sanathlokanath28/proton.git  # Updated repository URL
+schema_version: '1'

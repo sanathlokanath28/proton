@@ -1,0 +1,4 @@
+name: ecs-service
+display_name: ECS Service
+description: An ECS service
+schema_version: '1'
